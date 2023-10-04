@@ -26,7 +26,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  padding: 0;
+  padding: 28px;
   margin: 0;
   font-family: Arial, sans-serif;
   font-family: "Outfit" "Arial", sans-serif;
@@ -98,6 +98,42 @@ select:-webkit-autofill:focus {
   flex-grow: 1;
 }
 
+/* QR-CODE-CARD */
+
+.qr-code-card {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 329px;
+  padding: 16px 16px 40px;
+  margin: auto;
+  background-color: var(--card-bg);
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0px 25px 25px 0px rgb(0, 0, 0, 0.05);
+}
+
+.qr-code-card__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 24px;
+}
+
+.qr-code-card__heading {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 22px;
+  line-height: normal;
+  color: var(--heading-color);
+}
+
+.qr-code-card__text {
+padding-left: 16px;
+padding-right: 16px;
+margin: 0;
+}
+
+
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
@@ -106,4 +142,19 @@ only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
 
+}
+
+
+@media only screen and (max-width: 350px) {
+  body{
+    padding: 16px;
+  }
+
+  .qr-code-card__heading{
+    font-size: 20px;
+  }
+  
+  .qr-code-card__text{
+    padding: 0;
+  }
 }
