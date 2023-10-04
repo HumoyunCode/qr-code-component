@@ -1,3 +1,14 @@
+/* CUSTOM-PROPS  */
+
+:root {
+  --body-bg: #dce1ef;
+  --card-bg: #fff;
+  --heading-color: #1f314f;
+  --text-color: #7d889e;
+  --blue: #2c7dfa;
+  --blue-shade: #3685ff;
+}
+
 /* GLOBAL */
 html {
   box-sizing: border-box;
@@ -17,11 +28,13 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  background-color: #fff;
-  color: #222;
+  font-family: Arial, sans-serif;
+  font-family: "Outfit" "Arial", sans-serif;
+  font-size: 15px;
+  line-height: normal;
+  letter-spacing: 0.188px;
+  background-color: var(--body-bg);
+  color: var(--text-color);
 }
 
 img {
